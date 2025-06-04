@@ -1,0 +1,19 @@
+.oddNum {
+    background-color: #f08080;
+    font-family: Verdana, Dejavu Sans, sans-serif;
+}
+
+#textScale{
+    color: #0000ff;
+    font-size: 36px;
+}
+
+.adjustFontSize {
+    font-size: 24px;
+}
+
+#fourth {
+    background-color: #90ee90;
+    font-size: 24px;
+    font-weight: bold;
+}

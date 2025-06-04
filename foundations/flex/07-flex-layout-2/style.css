@@ -27,3 +27,71 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* solution */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevents the header from shrinking */
+  padding-left: 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.main {
+  display: flex;
+  flex: 1; /* Allows the main content to grow and fill available space */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  font-size: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.sidebar a { 
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;      /* Allow cards to wrap to next row */
+  margin: 24px;
+}
+
+.card {
+  width: 340px;
+  height: auto;         /* Set your desired fixed height */
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding is included in size */
+  flex: 0 0 auto;         /* Prevents flex from resizing the card */
+  margin:20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents the footer from shrinking */
+}

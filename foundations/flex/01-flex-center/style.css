@@ -5,6 +5,12 @@
   height: 300px;
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
 .box {
   background: palevioletred;
   font-weight: bold;

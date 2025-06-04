@@ -14,6 +14,19 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
 
+.header{
+  display: flex;/* Space between logo and nav */
+  align-items: center; /* Center items vertically */
+  padding: 0px 16px;
+}
+
+.header-right{
+  display: flex; /* Display items in a row */
+  align-items: center; /* Center items vertically */
+  gap: 16px; /* Space between items */
+  margin-left: auto; /* Push this section to the right */
+}
+
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -21,6 +34,7 @@ body {
   width: 48px;
   height: 48px;
 }
+
 
 .logo {
   color: rebeccapurple;
@@ -45,4 +59,11 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+ul {
+  display: flex; /* Display list items in a row */
+  padding: 8px 16px; /* Remove default padding */
+  gap: 16px; /* Space between list items */
+  align-items: center; /* Vertically center the links */
 }

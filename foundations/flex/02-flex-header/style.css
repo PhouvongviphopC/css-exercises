@@ -3,6 +3,13 @@
   background: papayawhip;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Center items vertically */
+  padding: 8px;
+}
+
 .logo {
   font-size: 48px;
   font-weight: 900;
@@ -14,6 +21,13 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+}
+
+ul {
+  display: flex; /* Display list items in a row */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  gap: 8px; /* Space between list items */
 }
 
 a {
